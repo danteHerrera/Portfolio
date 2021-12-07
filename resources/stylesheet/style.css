@@ -1,6 +1,23 @@
+/* Color Palette: 
+#0a1620
+#13293D
+#006494
+#247BA0
+#1B98E0
+#E8F1F2
+*/
+
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
+    font-family: sans-serif;
+}
+
+.main {
+    background-color: #13293D;
+    color: #E8F1F2;
 }
 
 header {
@@ -9,9 +26,44 @@ header {
 
 /* Section  */
 
+.section {
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+    background-image: url("../images/test.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 200px;
+    margin: 10px;
+}
+
 .section-link {
-    color: black;
+    color: #E8F1F2;
     text-decoration: none;
 }
 
 /* Footer */
+
+footer {
+    display: none;
+    background-color: #0a1620;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer table {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer table .data-type {
+    padding: 2px;
+    text-align: right;
+    font-weight: bold;
+}
+
+footer table .data {
+    padding: 2px;
+    text-align: left;
+}
