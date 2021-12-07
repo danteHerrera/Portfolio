@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+    margin: 0 auto;
+}
+
+/* Section  */
+
+.section-link {
+    color: black;
+    text-decoration: none;
+}
+
+/* Footer */
