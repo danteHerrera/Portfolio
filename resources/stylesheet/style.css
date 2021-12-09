@@ -20,14 +20,32 @@
     color: #E8F1F2;
 }
 
+a {
+    color: #E8F1F2;
+    text-decoration: none;
+}
+
+/* Header */
+
 header {
     margin: 10px auto;
+}
+
+hr {
+    margin: 10px auto;
+    width: 70%;
+    border: 2px solid #E8F1F2;
+    border-radius: 2px;
+}
+
+h1 {
+    margin: 10px;
 }
 
 /* Section  */
 
 .sections {
-    margin-bottom: 30vh;
+    margin-bottom: 15vh;
 }
 
 .section {
@@ -54,8 +72,6 @@ header {
 .section-link {
     display: inline-block;
     margin: 10px;
-    color: #E8F1F2;
-    text-decoration: none;
 }
 
 
@@ -80,6 +96,10 @@ footer .list .personal-info {
     padding: 0 25px;
 }
 
+footer a {
+    text-decoration: underline;
+}
+
 /* Display size based styles */
 
 /* Footer */
@@ -90,5 +110,11 @@ footer .list .personal-info {
 
     footer .list #personal-info1{
         border-left: none;
+    }
+}
+
+@media (max-width: 425px) {
+    footer .list .personal-info {
+        padding: 0 5px;
     }
 }
