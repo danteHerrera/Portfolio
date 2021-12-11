@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #313131;
+}
+
+/* Navigation Bar */
+
+nav {
+    z-index: 5;
+    background-color: hsl(227, 100%, 50%);
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    top: 0;
+}
+
+nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+    left: 30%;
+    width: 70%;
+    list-style: none;
+}
+
+/* Header  */
+
+header {
+    margin-top: 10vh;
+    background-color: #202020;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Article/text */
+
+article {
+    padding: 10px 15px 15vh;
+    background-color: #202020;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+article:before, article:after {
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+article:before {
+    box-shadow: -15px 0 15px -15px white inset;
+    left: -15px;
+}
+
+article:after {
+    box-shadow: 15px 0 15px -15px white inset;
+    right: -15px;
+}
+
+article p {
+    text-align: left;
+}
+
+/* Footer */
+
+footer {
+    background-color: hsl(227, 100%, 50%);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer .list {
+    padding: 10px;
+}
+
+footer .list .personal-info {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 0;
+    padding: 0 25px;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+@media (min-width: 1143px) {
+    footer .list .personal-info {
+        border-left: 2px solid #E8F1F2;
+    }
+
+    footer .list #personal-info1{
+        border-left: none;
+    }
+}
+
+@media (max-width: 425px) {
+    footer .list .personal-info {
+        padding: 0 5px;
+    }
+}

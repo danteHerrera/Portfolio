@@ -16,7 +16,7 @@
 }
 
 .main {
-    background-color: #13293D;
+    background-color: #202020;
     color: #E8F1F2;
 }
 
@@ -32,7 +32,7 @@ header {
 }
 
 hr {
-    margin: 10px auto;
+    margin: 10px auto 30px;
     width: 70%;
     border: 2px solid #E8F1F2;
     border-radius: 2px;
@@ -52,19 +52,21 @@ h1 {
     display: table-cell;
     height: 250px;
     width: 450px;
-    background-color: black;
+    background-color: hsl(227, 100%, 25%);
     vertical-align: middle;
     border-radius: 20px;
 }
 
 .section:hover {
     transition: .5s;
-    background-color: rgb(29, 29, 29);
+    background-color: hsl(227, 100%, 50%);
+    box-shadow: 0 0 20px #fff;
 }
 
 .section:active {
-    transition: 5ms;
-    background-color: rgb(40, 40, 40);
+    transition: .1s;
+    background-color: hsl(227, 100%, 75%);
+    box-shadow: 0 0 20px 5px #fff;
 }
 
 /* Section/link */
@@ -79,7 +81,7 @@ h1 {
 
 footer {
     /* display: none; */
-    background-color: #0a1620;
+    background-color: hsl(227, 100%, 50%);
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -90,7 +92,7 @@ footer .list {
 }
 
 footer .list .personal-info {
-    display: inline;
+    display: inline-block;
     list-style: none;
     margin: 10px 0;
     padding: 0 25px;
@@ -103,7 +105,7 @@ footer a {
 /* Display size based styles */
 
 /* Footer */
-@media (min-width: 1080px) {
+@media (min-width: 1143px) {
     footer .list .personal-info {
         border-left: 2px solid #E8F1F2;
     }
