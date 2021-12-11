@@ -5,6 +5,7 @@
     text-align: center;
     font-family: sans-serif;
     color: white;
+    text-decoration: none;
 }
 
 body {
@@ -23,6 +24,7 @@ nav {
 }
 
 nav .nav-list {
+    padding-top: 3.5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -31,6 +33,21 @@ nav .nav-list {
     left: 30%;
     width: 70%;
     list-style: none;
+}
+
+nav .nav-list .nav-item {
+    transition: all .5s;
+}
+
+nav .nav-list .nav-item:hover {
+    transform: translate(0, -5px) scale(1.25);
+    text-shadow: 0 0 5px white;
+}
+
+nav .nav-list .nav-item:active {
+    transition: all .1 ease-out;
+    transform: translate(0, -5px) scale(2);
+    text-shadow: 0 0 20px 15px white;
 }
 
 /* Header  */
