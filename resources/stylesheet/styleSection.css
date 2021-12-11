@@ -59,14 +59,21 @@ header {
     padding: 10px;
 }
 
+h1 {
+    margin: 0 auto;
+    width: 50vw;
+    border-bottom: 5px solid white;
+}
+
 /* Article/text */
 
 article {
-    padding: 10px 15px 15vh;
+    padding: 10px 15px 17vh;
     background-color: #202020;
     width: 90%;
     margin: 0 auto;
     position: relative;
+    min-height: 80vh;
 }
 
 article:before, article:after {
@@ -88,7 +95,17 @@ article:after {
 }
 
 article p {
+    margin-top: 50px;
     text-align: left;
+}
+
+article video {
+    max-width: 900px;
+    width: 40vw;
+    min-width: 300px;
+    float: right;
+    margin: 50px 10px 10px;
+    box-shadow: 0 0 5px 1px rgb(92, 92, 92);
 }
 
 /* Footer */
@@ -113,6 +130,19 @@ footer .list .personal-info {
 
 footer a {
     text-decoration: underline;
+}
+
+footer .list .personal-info {
+    transition: all .5s;
+}
+
+footer .list .personal-info:hover {
+    text-shadow: 0 0 5px white;
+}
+
+footer .list .personal-info a:active {
+    transition: all .1 ease-out;
+    text-shadow: 0 0 20px 15px #202020 inset;
 }
 
 @media (min-width: 1143px) {
