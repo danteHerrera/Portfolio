@@ -30,8 +30,8 @@ nav .nav-list {
     justify-content: space-around;
     color: white;
     position: relative;
-    left: 30%;
-    width: 70%;
+    left: 55%;
+    width: 45%;
     list-style: none;
 }
 
@@ -50,6 +50,24 @@ nav .nav-list .nav-item:active {
     text-shadow: 0 0 20px 15px white;
 }
 
+nav .nav-list .nav-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav .nav-list .nav-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 /* Header  */
 
 header {
@@ -62,7 +80,6 @@ header {
 h1 {
     margin: 0 auto;
     width: 50vw;
-    border-bottom: 5px solid white;
 }
 
 /* Article/text */
